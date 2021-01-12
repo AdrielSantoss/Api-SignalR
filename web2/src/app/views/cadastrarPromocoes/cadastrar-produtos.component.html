@@ -1,0 +1,21 @@
+<main class="card-main">
+    <div class="login-container">
+        <div class="login-title">
+            <span class="title">Cadastrar Produto</span>
+        </div>
+        <form [formGroup]="loginForm" class="p-4" (submit)="save()">
+            <label for="email">Empresa</label>
+            <input type="text" class="form-control mb-3" formControlName="empresa" >
+            <label for="text">Chamada</label>
+            <input type="text" class="form-control mb-3" formControlName="chamada" >
+            <label for="text">Regras</label>
+            <input type="text" class="form-control mb-3" formControlName="regras" >
+            <label for="text">Endereço URL</label>
+            <input type="text" class="form-control mb-3" formControlName="enderecoUrl" >
+            <div class="buttons mt-1 ml-4">
+                <button type="submit" class="btn btn-primary mr-2" >Cadastrar</button>
+            </div>            
+        </form>
+
+    </div>
+</main>
